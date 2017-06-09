@@ -9,3 +9,5 @@ In order to run this, you will need [Android Studio 3.0 Canary](https://develope
 [Google's code samples that are in Java and now Kotlin](https://developer.android.com/preview/o-samples.html)
 
 [Jake Wharton's Ordev talk on Kotlin](https://vimeo.com/144877458)
+
+[Kotlin official website](https://kotlinlang.org/)
