@@ -1,5 +1,6 @@
-package com.example.kotlin.robsmall.kotlinexampleapp
+package com.example.kotlin.robsmall.kotlinexampleapp.Activities
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -7,6 +8,7 @@ import android.widget.Toast
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
+import com.example.kotlin.robsmall.kotlinexampleapp.R
 
 class MainActivity : AppCompatActivity() {
   @BindView(R.id.sample_button) lateinit var sampleButton: TextView
@@ -20,7 +22,9 @@ class MainActivity : AppCompatActivity() {
   }
 
   @OnClick(R.id.sample_button)
-  fun onSampleClick() {
-    Toast.makeText(this, "Button clicked, w00t!", Toast.LENGTH_SHORT).show()
+  fun onSampleButtonClick() {
+    Toast.makeText(this, "Button clicked, w00t!\nGoing to new Activity.", Toast.LENGTH_SHORT).show()
+    val intent = Intent(applicationContext, SomeActivity::class.java)
+    startActivity(intent)
   }
 }
