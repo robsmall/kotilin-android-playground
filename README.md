@@ -11,3 +11,5 @@ In order to run this, you will need [Android Studio 3.0 Canary](https://develope
 [Jake Wharton's Ordev talk on Kotlin](https://vimeo.com/144877458)
 
 [Kotlin official website](https://kotlinlang.org/)
+
+[Kotlin Playground](https://try.kotl.in)

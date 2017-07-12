@@ -8,12 +8,11 @@
   tools:context="com.example.kotlin.robsmall.kotlinexampleapp.Activities.SomeActivity">
 
   <TextView
-    android:id="@+id/some_text"
+    android:id="@+id/message_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:text="You found me..."
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
