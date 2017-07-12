@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.TextView
 import butterknife.BindView
 import butterknife.ButterKnife
@@ -38,10 +39,24 @@ class SomeActivity : AppCompatActivity() {
     setUpActivity()
   }
 
+  /** Set up the activity's state.*/
   private fun setUpActivity() {
+    supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
     // Wow, this is pretty crazy. No need to call getInent here to get the intent object?
     // TODO: What is going on here? Look into it when you have internet!
     val message = intent.getStringExtra(INTENT_MESSAGE_PARAM)
     messageText.setText(message)
+  }
+
+  override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+    android.R.id.home -> consume { finish() }
+    else -> super.onOptionsItemSelected(item)
+  }
+
+  /** Function that consumes the passed in function {@code func} and returns {@code true}. */
+  inline fun consume(func: () -> Unit): Boolean {
+    func()
+    return true
   }
 }

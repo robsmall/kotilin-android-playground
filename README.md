@@ -13,3 +13,9 @@ In order to run this, you will need [Android Studio 3.0 Canary](https://develope
 [Kotlin official website](https://kotlinlang.org/)
 
 [Kotlin Playground](https://try.kotl.in)
+
+[null Safety](https://kotlinlang.org/docs/reference/null-safety.html)
+
+[Swift is Like Kotlin](http://nilhcem.com/swift-is-like-kotlin/)
+
+[Kotlin Tricks For Android](https://antonioleiva.com/kotlin-awesome-tricks-for-android/)

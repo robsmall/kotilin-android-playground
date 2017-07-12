@@ -17,12 +17,13 @@ class MainActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
     ButterKnife.bind(this)
-    sampleButton.text = "Toast to me!"
+    sampleButton.text = "To infinity, and beyond!"
   }
 
   @OnClick(R.id.sample_button)
   fun onSampleButtonClick() {
     Toast.makeText(this, "Button clicked, w00t!\nGoing to new Activity.", Toast.LENGTH_SHORT).show()
+
     val params = mutableMapOf(
         INTENT_MESSAGE_PARAM to "O HAI!"
     )
