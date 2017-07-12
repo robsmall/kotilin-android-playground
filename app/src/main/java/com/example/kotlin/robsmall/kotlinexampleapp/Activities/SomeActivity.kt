@@ -41,6 +41,8 @@ class SomeActivity : AppCompatActivity() {
 
   /** Set up the activity's state.*/
   private fun setUpActivity() {
+    // Use the safe call, which will just return null for the whole call stream. We could use "!!"
+    // instead if we would rather throw a NPE.
     supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
     // Wow, this is pretty crazy. No need to call getInent here to get the intent object?
